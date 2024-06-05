@@ -50,7 +50,7 @@ a {
     }
   }
 }
- 
+
 /* ------------------------ main wallpaper -------------------- */
 
 .row {
@@ -95,7 +95,6 @@ a {
   }
 }
 
-
 /* ---------------- category css ------------------------ */
 
 .feature-category {
@@ -106,41 +105,34 @@ a {
     min-width: 250px;
     margin-bottom: 30px;
 
-    img{
+    img {
       width: 100%;
     }
-
   }
 
-  .small-container{
+  .small-container {
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
   }
-
-
 }
-
-
 
 /* --------------------- product css ----------------------- */
 
-.col-4{
+.col-4 {
   flex-basis: 25%;
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.5s;
 
-  img{
+  img {
     width: 100%;
   }
-
 }
 
-
-.title{
+.title {
   text-align: center;
   margin: 0;
   position: relative;
@@ -148,7 +140,7 @@ a {
   color: #555;
 }
 
-.title::after{
+.title::after {
   content: "";
   background: #ff523b;
   width: 80px;
@@ -160,36 +152,170 @@ a {
   transform: translateX(-50%);
 }
 
-
-h4{
+h4 {
   color: #555;
   font-weight: normal;
 }
 
-.col-4 p{
+.col-4 p {
   font-size: 14px;
-
 }
 
-svg{
+svg {
   color: #ff523b;
 }
 
-.col-4:hover{
+.col-4:hover {
   transform: translateY(5px);
 }
 
-
-.offer{
+.offer {
   background: radial-gradient(#fff, #ffd6d6);
 }
 
-
-.col-2 .offer-img{
+.col-2 .offer-img {
   padding: 50px;
+}
+
+small {
+  color: #555;
+}
+
+
+
+/* ------------------- testimonial css ------------------ */
+
+
+.testimonial{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+
+
+  .ts-small-container{
+    display: flex;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+
+
+    .ts-row{
+      display: flex;
+      
+      .user-1{
+        width: 50px;
+        border-radius: 50%;
+        margin: 10px;
+      }
+  
+    }
+
+  }
+
+ 
+
 
 }
 
-small{
-  color:#555
+
+
+/* -------------- brands css ------------------- */
+.brands{
+  margin:100px auto;
+}
+
+.col-5{
+  width: 160px;
+}
+
+.col-5 img{
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);    /* all the log color is gray */
+}
+
+.col-5 img:hover{
+  filter: grayscale(0);
+}
+
+
+
+/* ----------- footer ---------------  */
+.footer{
+  background-color: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+
+  .footer-col-1{
+
+    p{
+      color: #8a8a8a;
+    }
+  
+    .h3{
+      color: #fff;
+      margin-bottom: 20px;
+
+  
+    }
+  }
+
+ 
+}
+
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+
+
+.footer-col-2 img{
+  width: 180px;
+  /* margin-bottom: 20px; */
+}
+
+.footer-col-3, .footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+.app-logo img{
+  width: 140px;
+
+  
+}
+
+
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+
+}
+
+.copyright{
+  text-align: center;
 }
