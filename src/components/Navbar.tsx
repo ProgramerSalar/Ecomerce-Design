@@ -16,6 +16,7 @@ const Navbar = () => {
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
+                <img src="src\assets\RedStore_Img\images\cart.png" alt="cart-image" width="30px" height="30px"/>
             </div>
         </div>
 

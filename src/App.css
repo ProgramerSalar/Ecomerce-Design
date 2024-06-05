@@ -1,86 +1,82 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-a{
-  outline:none;
+a {
+  outline: none;
   text-decoration: none;
 }
 
-
-.home-container{
+.home-container {
   background: radial-gradient(#fff, #ffd6d6);
+
+  .row {
+    margin-top: 60px;
+  }
 }
 
-/* navbar css  */
-.container{
+/* ----------------------------- navbar css -------------------------  */
+.container {
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 
-  .navbar{
+  .navbar {
     display: flex;
     align-items: center;
     padding: 20px;
-  
-    nav{
-      flex:1;
+
+    nav {
+      flex: 1;
       text-align: right;
-    
-      ul{
-        display: inline-block;    /* take the size of the size */
+
+      ul {
+        display: inline-block; /* take the size of the size */
         /* background-color: green; */
         list-style-type: none;
       }
-    
-      li{
+
+      li {
         display: inline-block;
         margin-right: 20px;
       }
-    
-      a{
-        color: #555;
-    
-      }
 
-      
+      a {
+        color: #555;
+      }
     }
   }
 }
+ 
+/* ------------------------ main wallpaper -------------------- */
 
-
-
-
-
-.row{
+.row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;     /* this propery are text align in one row and if you descrese the width of window then wrap -> goes to the next line  */
+  flex-wrap: wrap; /* this propery are text align in one row and if you descrese the width of window then wrap -> goes to the next line  */
   /* background-color: green; */
   justify-content: space-around;
 
-
-  .col-2{
-    flex-basis: 50%;  /* both columns are occupy the half-half width */
-    min-width:300px;
+  .col-2 {
+    flex-basis: 50%; /* both columns are occupy the half-half width */
+    min-width: 300px;
     padding-left: 20px;
   }
 
-  img{
+  img {
     max-width: 100%;
     padding: 50px 0;
   }
-  h1{
+  h1 {
     font-size: 50px;
-   line-height: 60px;
-   margin: 25px 0; 
+    line-height: 60px;
+    margin: 25px 0;
   }
 
-  .btn{
+  .btn {
     display: inline-block;
     background-color: green;
     color: white;
@@ -88,10 +84,112 @@ a{
     margin: 30px 0;
     border-radius: 30px;
     text-align: center;
-    
+    transition: background 0.5s;
   }
-  .svg{
+  .btn:hover {
+    background: #564343;
+  }
+  .svg {
     text-align: center;
     align-content: center;
   }
+}
+
+
+/* ---------------- category css ------------------------ */
+
+.feature-category {
+  margin: 70px 0;
+
+  .col-3 {
+    flex-basis: 30%; /* if you give the 30% then each photo take 30% of width and height */
+    min-width: 250px;
+    margin-bottom: 30px;
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
+}
+
+
+
+/* --------------------- product css ----------------------- */
+
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+
+  img{
+    width: 100%;
+  }
+
+}
+
+
+.title{
+  text-align: center;
+  margin: 0;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after{
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+h4{
+  color: #555;
+  font-weight: normal;
+}
+
+.col-4 p{
+  font-size: 14px;
+
+}
+
+svg{
+  color: #ff523b;
+}
+
+.col-4:hover{
+  transform: translateY(5px);
+}
+
+
+.offer{
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+
+.col-2 .offer-img{
+  padding: 50px;
+
+}
+
+small{
+  color:#555
 }
